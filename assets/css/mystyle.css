@@ -1,0 +1,684 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../polices/Montserrat/Montserrat.eot');
+    src:url('../polices/Montserrat/Montserrat.woff2') format('woff2'),
+        url('../polices/Montserrat/Montserrat.woff') format('woff'),
+        url('../polices/Montserrat/Montserrat.ttf') format('truetype'),
+        url('../polices/Montserrat/Montserrat.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../polices/ArialRoundedMT/Arial\ Rounded\ MT\ W02\ Bold.eot');
+    src: url('../polices/ArialRoundedMT/Arial\ Rounded\ MT\ W02\ Bold.woff2') format('woff2'),
+         url('../polices/ArialRoundedMT/Arial\ Rounded\ MT\ W02\ Bold.woff') format('woff'),
+         url('../polices/ArialRoundedMT/Arial\ Rounded\ MT\ W02\ Bold.ttf') format('truetype'),
+         url('../polices/ArialRoundedMT/Arial\ Rounded\ MT\ W02\ Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+    --green-bg : #94E7C0;
+    --green-bg-button: #51E6A0;
+}
+
+body
+{
+    scroll-behavior: smooth;
+}
+
+.big-body
+{
+    background: url('../img/Rectangle.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.my_logo
+{
+    width: 100%;
+    height: auto;
+}
+
+ul li a
+{
+    font-size: 20px;
+}
+
+.btn-contact-me-first
+{
+    color: #fff;
+    padding:  0.5em 1em;
+    border-radius: 5px;
+    border: 2px solid var(--green-bg-button);
+    background: var(--green-bg-button);
+    transition:0.3s!important;
+}
+
+.btn-contact-me-first:hover
+{
+    color: #fff!important;
+    background-color: #48D492!important;
+    transition:0.3s!important;
+}
+
+.first-row-container
+{
+    margin-top: 7.1em;
+}
+
+.hello_everyone
+{
+    font-size: 1.7em;
+    padding-left: 6em;
+    
+}
+
+.hello_everyone::before
+{
+    content: "";
+    height: 1px;
+    width: 4.7em;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-5em,0.8em);
+}
+
+.hello_everyone::after
+{
+    content: "";
+    height: 1px;
+    width: 4.7em;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(7em,-1.3em);
+}
+
+.hello_everyone.en::after
+{
+    content: "";
+    height: 1px;
+    width: 4.7em;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(100px,-35px)!important;
+}
+
+.name_container p .name
+{
+    font-family: 'Arial Rounded MT';
+    color: white;
+    font-size: 3em;
+}
+
+.name_container p span:last-child
+{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: white;
+    font-size: 1.5em;
+}
+
+.btn-cv-container a,.btn-cv-container button
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.btn-cv-container a:first-child
+{
+    background: var(--green-bg-button);
+    border: 1px solid var(--green-bg-button);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.btn-cv-container a:first-child:hover
+{
+    transition: 0.3s;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.3),0 3px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cv-container a
+{
+    border: 2px solid white;
+    background: transparent;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.btn-cv-container a:last-child:hover
+{
+    transition: 0.3s;
+    color: #2FBABD;
+    background-color: #fff;
+}
+
+.my_photo
+{
+    width: 100%;
+    height: auto;
+}
+
+.who_am_i-container
+{
+    background-color: var(--green-bg);
+    padding: 2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.who_am_i-container div div p
+{
+    font-family: 'Montserrat';
+    color: #fffaef;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.name_two_container p span:first-child,.name_two_container p span:last-child
+{
+    font-family: 'Arial Rounded MT';
+    color: #fffaef;
+    font-size: 1.7em;
+}
+
+.name_two_container p span:last-child
+{
+    font-family: 'Montserrat'!important;
+    font-size: 1.1em!important;
+}
+
+.fullstack-container
+{
+    font-family: 'Arial Rounded MT';
+    font-size: 1.5em;
+    color: #fffaef;
+}
+
+.historique-container
+{
+    background-color: #2FBABD;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+}
+
+.historique-container
+{
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+.my-school,.emotion-container,.phone-number
+{
+    color: #fffaef!important;
+    font-weight: 600;
+}
+
+.phone-number
+{
+    font-size: 1.2em;
+}
+
+.skills_big_container
+{
+    margin-top: 8em;
+}
+
+.skills
+{
+    font-family: 'Arial Rounded MT';
+}
+
+.skills~p,i
+{
+    color: #fff;
+}
+
+.skills~p
+{
+    font-weight: 600;
+}
+
+.wp-container
+{
+    padding: 1em;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.wp-container span
+{
+    display: block;
+}
+
+.wp-container span:first-child
+{
+    color: #909090;
+    border-right: 2px solid #b3b3b3;
+    padding-right: 1em;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.wp-container span:last-child
+{
+    color: #5878C3;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    display: flex;
+    align-items: center;    
+}
+
+/* .card
+{
+    background-color: transparent!important;
+} */
+
+.design-graph_container,.front-container
+{
+    border-radius: 10px!important;
+    padding: 2em;
+    border: none;
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 1)!important;
+}
+
+.design-graph_container h4,.front-container h4
+{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    color: #909090;
+}
+
+.skills_content
+{
+    color: #909090;
+    font-weight: 600;
+}
+
+.progress-container
+{
+    color: #296b88;
+}
+
+
+.caroussell-big-container
+{
+    background-color: #296b88;
+}
+
+.projects_big_container h2,.projects_big_container p,.projects_big_container i
+{
+    color: #296b88!important;
+}
+
+.img-container > img
+{
+    width: 100%;
+    height: auto;
+}
+
+.project-container
+{
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.2);
+    padding: 2em;
+    border-radius: 10px;
+    color: #296b88;
+}
+
+.project-big-container
+{
+    padding-top: 2em;
+    background-color: #eafaf3!important;
+    /* padding: 0 10em; */
+}
+
+.project-title
+{
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+}
+
+.btn-visite a
+{
+    background-color: #94E7C0;
+    color: #fff;
+}
+
+.btn-visite a:focus
+{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0)!important;
+}
+
+.btn-visite a:hover
+{
+    background: #51E6A0;
+    color: #fff;
+}
+
+footer
+{background: #2FBABD;color: #fff;}
+
+footer h3
+{
+    font-family: 'Montserrat';
+    color: #51E6A0!important;
+}
+
+footer:not(h3)
+{
+    font-size: 1.1em;
+}
+
+.menumobile
+{
+    display: none;
+}
+
+@media screen and (max-width:880px) {
+    .card-projects-container
+    {
+        width: 79em;
+
+    }
+
+    .project-container
+    {
+        position: relative;
+        width: 300px;
+        margin-top: 120px;
+    }
+
+    #project-content
+    {
+        overflow: hidden;
+        overflow-x: scroll ;
+    }
+
+    .project-title-container
+    {
+        position: absolute;
+    }
+
+    .project-content
+    {
+        margin: 0px 40px ;
+    }
+
+    .descri-container
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .introdiction-container,.my_logo
+    {
+        width: 62%!important;
+    }
+
+    .first-row-container
+    {
+        margin-top: 0!important;
+    }
+    
+    .none
+    {
+        display: none;
+    }
+
+    .who_am_i-container
+    {
+        width: 100%;
+    }
+
+    .who_am_i
+    {
+        justify-content: center;
+    }
+
+    .historique-container
+    {
+        width: 100%;
+    }
+
+    .who_am_i-big-container
+    {
+        margin-left: 60px!important;
+
+    }
+
+    .second-skills-container
+    {
+        margin:0;
+    }
+
+    .skills_big_container-next
+    {
+        flex-direction: column;
+    }
+
+    .second-project-container
+    {
+        width: 100%!important;
+        padding: 0px 109px;
+    }
+
+    .second-skills-container
+    {
+        margin: 20px 0!important;
+    }
+
+    .framework-container
+    {
+        margin-top: 20px;
+    }
+
+    .card-projects-container
+    {
+        margin-top: 73px;
+    }
+
+    footer div div
+    {
+        padding: 0;
+        padding-top: 0em!important;
+    }
+
+    footer div div div h3
+    {
+        font-size: 20px;
+    }
+
+    footer .btn-contact-me-first
+    {
+        font-size: 14px!important;
+    }
+}
+
+@media screen and ( max-width:600px ) {
+    .second-project-container 
+    {
+        padding: 0px 0px!important;
+    }
+
+    .who_am_i-big-container 
+    {
+        margin-left: 00px !important;
+    }
+    
+    .menu-pc
+    {
+        display: none!important;
+    }
+
+    .menumobile
+    {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 30;
+        box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
+    }
+
+    .descri-container
+    {
+        display: flex!important;
+        flex-direction: column-reverse;
+        margin-top: 0em;
+    }
+    
+    .first-row-container
+    {
+        margin-top: 0em;
+    }
+
+    .hello_everyone
+    {
+        font-size: 1.1em;
+        padding-left: 6em;
+        
+    }
+
+    .hello_everyone::after
+    {
+        transform: translate(7em,-1.5em);
+    }
+
+    .hello_everyone.en::after
+    {
+        transform: translate(70px,-30px)!important;
+    }
+
+    .name_container p .name
+    {
+        font-size: 2em;
+    }
+
+    .name_container p span:last-child
+    {
+        font-size: 1.1em;
+    }
+
+    .my-photo-container
+    {
+        margin-top: 4.5em;
+    }
+
+    .btn-cv-container a,.btn-cv-container button
+    {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .who_am_i-big-container
+    {
+        transform: translate(0,0)!important;
+        padding: 0 ;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .who_am_i-container
+    {
+        padding: 1em!important;
+    }
+
+    .who_am_i
+    {
+        flex-direction: column!important;
+    }
+
+    .question-container p
+    {
+        font-size: 1.3em!important;
+    }
+
+    .skills_big_container
+    {
+        padding: 0em 2em!important;
+    }
+
+    .second-skills-container
+    {
+        margin: 0!important;
+        margin-bottom: 2em!important;
+        padding: 0 2em!important ;
+    }
+
+    .second-skills-container:not(.second-skills-container:last-child) div:first-child
+    {
+        margin-top: 1em;
+    }
+
+    .card-projects-container
+    {
+        width: 79em;
+        margin-top: 0;
+
+    }
+
+    .project-container
+    {
+        position: relative;
+        width: 300px!important;
+        margin-top: 120px!important;
+    }
+
+    #project-content
+    {
+        overflow: hidden;
+        overflow-x: scroll !important;
+    }
+
+    .project-title-container
+    {
+        position: absolute;
+    }
+
+    .project-content
+    {
+        margin: 0px 40px ;
+    }
+
+    .project-content h4
+    {
+        font-size: 17px;
+    }
+
+    .desigh-graph
+    {
+        margin-bottom: 1em;
+    }
+
+    .btn-visite a
+    {
+        background-color: #51E6A0!important;
+    }
+
+    .copyright
+    {
+        margin-top: 2em!important;
+    }
+
+    .space
+    {
+        margin-top: 1em!important;
+    }
+
+    .introdiction-container
+    {
+        width: 100%!important;
+    }
+}

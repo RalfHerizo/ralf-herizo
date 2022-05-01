@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+  	
+
+    <title>Harena Maitso</title>
+    
+ 	<link rel="icon" href="assets/img/logo.png" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  </head>
+  <body>
+    <section style="
+        background-image: url('assets/img/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;padding-bottom: 400px;" >
+
+        <nav class="navbar navbar-expand-md navbar-dark" id="my_nav_bar">
+        <a class="navbar-brand text-white" href="#">
+            <div class="logo-container">
+                <div>
+                    <img src="assets/img/logo.png" width="91" height="80" alt="logo du site" />
+                </div>
+                <div class="site-name">
+                    <span class="harena">Harena</span>Maitso
+                </div>
+            </div>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-1">
+                     <a class="nav-link" href="#">ACCEUIL</a>
+                     <div class="progress-container">
+                        <div id="progressContent" class="progress-content"></div>
+                    </div>
+                </li>
+                <li class="nav-item nav-1">
+                     <a class="nav-link" href="#activite">ACTIVITES</a>
+                     <div class="progress-container">
+                        <div id ="progressContent-1"></div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-flex justify-content-center" style="flex-direction: column!important;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      AUTRES
+                    </a>
+                    <div class="progress-container">
+                        <div id ="progressContent-2" class=""></div>
+                    </div>
+                    <div class="dropdown-menu bg-dark" >
+                      <a class="dropdown-item text-white" href="#objectif" style="text-overflow: clip;">NOS OBJECTIF ET LEURS RAISONS</a>
+                      <a class="dropdown-item text-white" href="#infosupplement">INFORMATIONS SUPPLEMENTAIRES</a>
+                      <a class="dropdown-item text-white" href="#description">DESCRIPTION</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-1 ">
+                    <a class="nav-link" href="#membre">MEMBRES</a>
+                    <div class="progress-container">
+                        <div id ="progressContent-3"></div>
+                    </div>
+                </li>
+                <li class="nav-item nav-1 mr-3">
+                    <a class="nav-link" href="#contact">CONTACTS</a>
+                    <div class="progress-container">
+                        <div id ="progressContent-4"></div>
+                    </div>
+                </li>
+                <li class="nav-item btn-log-container">
+                    <a class="nav-link btn btn-log" href="#" data-toggle="modal" data-target="#myModal">CONNEXION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-log" href="#inscription">INSCRIPTION</a>
+                </li>    
+            </ul>
+        </div> 
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="z-index: 100;">
+                <h5 class="text-center" style="color: #41C200;margin-bottom: 60px;"><span style="color:#6C4016">CONN</span>EXION</h5>
+                <form action="#" method="POST" id="connexion">
+                    <div class="form-group">
+                        <label for="email" class="font-weight-bolder" >Email ou Numéro:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Votre email ou numero..." name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd" class="font-weight-bolder" >Mot de passe:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Votre mot de passe..." name="pwd">
+                    </div>
+                    <div class="d-flex justify-content-between souvenir-oublie">
+                        <div class="form-group form-check d-">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Se souvenir de moi
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="text-right">Mot de passe oublié</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around btn-log-close">
+                        <button type="submit" class="btn-submit text-white">Se connecter</button>
+                        <button type="button" class="btn-fermer text-white" data-dismiss="modal">Fermer</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row descri-big-container" >
+            <div class="col-md-6">
+                <div class="descri-container-0">
+                    <p class="text-white" style="font-size: 35px;">
+                        Bienvenue sur <strong>Harena Maitso</strong>
+                    </p>
+                    <p class="text-white descri-content-2">
+                        Plateforme visant à améliorer l'environnement de Madagascar!
+                        Plus précisemment, la capitale : Antananarivo.
+                        Pour cela, nous avons besoin de toutes aides disponibles, 
+                        y compris vous. Rejoignez notre groupe. Nous allons <strong id="slider-content">RECYCLER</strong> 
+                        les déchets d'Antananarivo !
+                    </p>
+                    <div class="btn-commencer-container">
+                        <a href="#objectif" class="btn-commencer text-white" style="text-decoration: none;">
+                            COMMENCER
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end img-descri">
+                <div style="border-radius: 20px;" class="bg-white">
+                    <h5 class="mt-3" style="position: absolute;left: 50%;"><span style="color: #6C4016;">Tanàna</span> <span style="color: #339933;">Maitso</span></h5>
+                    <img src="assets/img/58070-fallen-tree-and-wind.gif" style="border-radius: 20px;" width="400"/>
+                    <p class="text-center" style="margin-top: -50px;margin-bottom: 40px;"><span style="color: #6C4016;">Ndao hiaraka hifanome tan</span><span style="color: #6C4016;">ana hanatsara<br> ny tanànantsika</span></p> 
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slide-container" id="objectif">
+                <div class="slide active" id="slide-1"></div>
+                <div class="slide" id="slide-2"></div>
+                <div class="slide" id="slide-3"></div>
+            </div>
+        </div>
+        <a href="#"><img src="assets/img/animation_500_kwxncx84.gif" width="50" style="position: fixed;right: 20px;bottom: 50px;cursor: pointer;z-index: 30;"/></a>
+      </div>
+    </section>
+    
+    <section  class="objectif-big-container">
+        <div class="container">
+            <h4 class="text-center font-weight-bolder text-white">NOS OBJECTIS ET LEURS RAISONS</h4>
+            <div class="row objectif-content">
+                <div class="col-md-4">
+                    <div class="objectifs-container" style="padding-bottom: 27%!important;">
+                        <div class="d-flex justify-content-center mb-2">
+                            <img src="assets/img/gas_26px.png" width="35"/>
+                        </div>
+                        <h5 class="text-center font-weight-bolder">REDUIRE LE TAUX DE CO2</h5>
+                        <article style="padding-right: 25px;padding-left: 25px;">
+                            En effet,depuis 
+                            ces derniers années,
+                            le CO2 dans la capitale
+                            ne cesse d'augmenter.
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="objectifs-container" style="padding-bottom: 27%!important;">
+                        <div class="d-flex justify-content-center mb-2">
+                            <img src="assets/img/lemur_24px.png" width="35"/>
+                        </div>
+                        <h5 class="text-center font-weight-bolder">PRESERVER LA NATURE</h5>
+                        <article style="padding-right: 25px;padding-left: 25px;">
+                            Les espèces vivantes
+                            parmi nous, meurent
+                            à cause de nos déchets.
+                            La sécheresse
+                            s'accentue en ville.
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="objectifs-container">
+                        <div class="d-flex justify-content-center mb-2">
+                            <img src="assets/img/recycling_32px.png" width="35"/>
+                        </div>
+                        <h5 class="text-center font-weight-bolder">UNE VILLE PROPRE</h5>
+                        <article style="padding-right: 25px;padding-left: 25px;">
+                            La ville d'Antanarivo est
+                            est rempli de déchets
+                            plastique qui peuvent
+                            être recycler pour 
+                            l' amélioration de
+                            l'aspect de la capitale.
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="activite-big-container" id="activite">
+        <!-- Here now -->
+        <div class="container activite-container">
+            <h5 class="text-center text-white font-weight-bolder" style="font-size: 30px;margin-bottom: 100px;">ACTIVITES DES MEMBRES</h5>
+            <div class="row d-flex justify-content-end bg-white" style="
+                padding-top: 53px;
+                padding-bottom: 30px;border-radius: 20px;">
+                <div class="col-md-4 activite-img-1">
+                    <img style="box-shadow: 0px 6px 52px rgba(0, 0, 0, 0.55);height:auto;" src="assets/img/249619519_4334482823315623_928680748936960349_n.jpg" width="250"/>
+                </div>
+                <div class="col-md-7">
+                    <h5><span style="color:#6C4016">NETT</span><span style="color:#41C200">OYAGE</span></h5>
+                    <article>
+                        Participez à l'évolution , au 
+                        changement de<br/> l'aspect de la ville 
+                        de Tananarive. Vous serez<br/> le 
+                        prochain à écrire l'histoire en nous
+                        aidons<br/> à rendre la ville plus propre.
+                        Tous les mois un<br/> grand nettoyage 
+                        sera organisé pour les<br/> membres qui
+                        voudront venir.
+                    </article>
+                    
+                    <div class="btn-participe-container">
+                        <button class="btn-participer text-white mt-2">PARTICIPEZ</button>
+                    </div>      
+                </div>
+            </div>
+            <div class="row bg-white boite-2-img-container">
+                <div class="boite-2-activite">
+                    <div class="col-md-7">
+                        <div style="margin-left: 30px;">
+                            <h5><span style="color:#6C4016">REBOIS</span><span style="color:#41C200">EMENT</span></h5>
+                        </div>
+                        <article class="d-flex justify-content-center">
+                            Plantez des arbres qui portera
+                            votre nom.<br/> Vous pourrez suivre 
+                            son évolution et cela<br/> aiderait 
+                            beaucoup à stabiliser le climat de<br/>
+                            Madagascar et évitera la
+                            sécheresse dans<br/> toute l'île.
+                        </article>
+                        <div class="btn-participe-container" style="margin-left: 30px;">
+                            <button class="btn-participer text-white mt-2">PARTICIPEZ</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 activite-img-1">
+                        <img style="box-shadow: 0px 6px 52px rgba(0, 0, 0, 0.55);height:auto;" src="assets/img/250206032_4334482819982290_3092708488218497277_n.jpg" width="250"/>
+                    </div>
+                </div>  
+            </div>
+            <div class="row bg-white" style="padding-top: 53px;
+            padding-bottom: 30px;margin-top: 50px;border-radius: 20px;">
+                <div class="col-md-5 activite-img-1">
+                    <img style="box-shadow: 0px 6px 52px rgba(0, 0, 0, 0.55);height:auto;" src="assets/img/249907976_4334482816648957_942900107627400736_n.jpg" width="250"/>
+                </div>
+                <div class="col-md-7">
+                    <h5><span style="color:#6C4016">RECY</span><span style="color:#41C200">CLAGE</span></h5>
+                    <article>
+                        Signalez-nous si vous avez des
+                        bouteilles<br/> plastiques pour que les
+                        responsables les<br/> transformes pour 
+                        les réutilisés en matière<br/> aidant à la
+                        beauté de la capitale. 
+                    </article>
+                    <div class="btn-participe-container">
+                        <button class="btn-participer text-white mt-2"id="infosupplement" >PARTICIPEZ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: -163px;" >
+        <div class="container info-suppl-container" >
+            <h5 class="text-center font-weight-bolder text-white" style="font-size: 30px;">INFORMATIONS SUPPLEMENTAIRES</h5>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 bg-white info-boite-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/short_hair_lady_question_mark_100px.png" alt="une image pensante"/>
+                    </div>
+                    <h5 class="text-center why-you">POURQUOI VOUS?</h5>
+                    <article>
+                        Vous êtes notre atout et la ville  a 
+                        besoin de vous. Vous serez la prochaine
+                        personne à marquer le changement 
+                        dans la capitale et Madagascar. Vous 
+                        pourriez narrer votre histoire à toute une 
+                        génération.
+                    </article>
+                </div>
+                <div class="col-md-4 bg-white info-boite-2">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/logo.png" alt="une image pensante" width="100"/>
+                    </div>
+                    <h5 class="text-center mt-2">QUI SOMMES NOUS?</h5>
+                    <article id="membre">
+                        Hacktiviste qui œuvre avec le peuple
+                        pour améliorer l'environnement de
+                        Madagascar et plus précisément,
+                        l'état de la ville de Tananarive. Nous 
+                        incitons et aidons les gens qui veulent
+                        donner une vie meilleures aux enfants
+                        avenirs.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 150px;" >
+        <div class="container">
+            <div class="d-flex justify-content-between p-4 membres-titres" style="background-color: #ccc;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+                <h5 class="font-weight-bolder" style="color: #262626;">NOS MEMBRES</h5>
+                <h5 style="color: #A1A1A1;">REJOIGNEZ LA TEAM! <a href="#inscription" style="text-decoration: none;"><span style="color:#41C200">INSCRIVEZ-VOUS</span></a>  DES MAINTENANT</h5>
+            </div>
+            <div id="membre" class="pt-4 pb-4" style="box-shadow: 0 0 6px rgba(0, 0, 0, 0.22)">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4">
+                        <ul style="list-style-type: none;">
+                            <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                            <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                            <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul style="list-style-type: none;">
+  <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                            <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                            <li class="profil-container">
+                                <img width="60" style="border-radius: 50%;height: auto;border: 4px solid #ccc;" src="assets/img/30706682_1635067439945328_431515029221670912_n.jpg" alt="photo de profil" />
+                                <p>Rova Rak</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 membre-tree">
+                        <img src="assets/img/33582-litle-tree.gif" width="300" alt="arbre éméergant"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end ">
+                        
+                    </div>
+                    <div class="col-md-3 mt-4 btn-more-container">
+                        <button class="btn-see-more text-white ml-3">VOIR PLUS</button>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3" id="description">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 53px;" >
+        <div class="container">
+            <div class="row d-flex justify-content-center number-container">
+                <div class="number col-md-3"><p style="color: #339933;">1</p></div>
+                <div class="col-md-1"></div>
+                <div class="number col-md-3"><p style="color: #339933;">2</p></div>
+                <div class="col-md-1"></div>
+                <div class="number col-md-3"><p style="color: #339933;">3</p></div>
+            </div>
+            <div class="row d-flex justify-content-center boite-processus-container">
+                <div class="col-md-3 descri-container pt-4 pl-4 pr-4 boite-processus-content-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/logo.png" alt="logo harena maitso" width="70"/>
+                    </div>
+                    <h5 class="text-center" style="color: #339933;">HARENA MAITSO</h5>
+                    <article>
+                        Nous facilitons la protection
+                        de la nature en mettant 
+                        notre site pour vous aider 
+                        à recycler et reboiser 
+                        facilement. 
+                    </article>
+                </div>
+                <div class="col-md-1 d-flex align-items-center etc-container">
+                    <img src="assets/img/liaison.png" width="60" class="etc"/>
+                </div>
+                <div class="col-md-3 descri-container pt-4 pl-4 pr-4 boite-processus-content">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/recycling_96px.png" alt="logo harena maitso" width="70"/>
+                    </div>
+                    <h5 class="text-center" style="color: #339933;">RECYCLAGE</h5>
+                    <article>
+                        Chaque bouteilles que vous 
+                        nous signalerez sera recyclez
+                        pour être réutilisez.   
+                    </article>
+                </div>
+                <div class="col-md-1 d-flex align-items-center etc-container">
+                    <img src="assets/img/liaison.png" width="60" class="etc"/>
+                </div>
+                <div class="col-md-3 descri-container pt-4 pl-4 pr-4 boite-processus-content">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/forest_80px.png" alt="logo harena maitso" width="70"/>
+                    </div>
+                    <h5 class="text-center" style="color: #339933;">REBOISEMENT</h5>
+                    <article>
+                        Grace aux bouteilles que 
+                        vous nous avez offert, des
+                        plantes seront plantés à votre
+                        nom. 
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="login-container">
+        <div class="container" id="inscription">
+            <h5 class="text-center" style="color: #41C200;margin-bottom: 60px;"><span style="color:#6C4016">INSCRI</span>PTION</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="#" method="POST" id="inscription">
+                        <div class="form-group">
+                            <label for="nom" class="font-weight-bolder" >Nom:</label>
+                            <input type="nom" class="form-control" id="nom" placeholder="Votre nom..." name="nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="font-weight-bolder" >Prénom:</label>
+                            <input type="username" class="form-control" id="username" placeholder="Votre nom d'utilisateur..." name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="font-weight-bolder" >Email ou Numéro:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Votre email ou numero..." name="email">
+                        </div>
+                        <div>
+                            <label for="quartier" class="font-weight-bolder" >Votre quartier:</label><br/>
+                            <select id="quartier" name="quartier">
+                                <option value="Analakely">Analakely</option>
+                                <option value="Ambohijatovo">Ambohijatovo</option>
+                                <option value="Ambanidia" selected>Ambanidia</option>
+                                <option value="67Ha">67Ha</option>
+                            </select>
+                        </div><br/>
+                        <div class="form-group">
+                          <label for="pwd" class="font-weight-bolder" >Mot de passe:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Votre mot de passe..." name="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmpwd" class="font-weight-bolder" >Confirmer le mot de passe:</label>
+                            <input type="password" class="form-control" id="confirmpwd" placeholder="Confirmer le mot de passe..." name="confirmpwd">
+                          </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Se souvenir de moi
+                          </label>
+                        </div>
+                        <button type="submit" class="btn-submit text-white">S'inscrire</button>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div>
+                        <img src="assets/img/84776-tree.gif" alt="arbre émergeant" width="400" class="tree-login"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <footer>
+        <section class="row abonne-container">
+          <div class="col-md-3">
+
+          </div>
+          <div class=" col-md-6 newsletter-container">
+              <p class="font-weight-bolder text-white">ABONNEZ-VOUS A NOTRE NEWSLETTER</p>
+              <div>
+                  <form method="POST" action="#" style="display: flex;">
+                      <input class="newsletter" type="email" placeholder="Votre email..." required/>
+                      <button class="newsletter-btn" type="submit">S'ABONNER</button>
+                  </form>
+              </div>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+        </section>
+
+        <section class="row footer-detail">
+          <div class="partenaire col-md-4 d-flex" style="flex-direction: column;align-items: flex-end;">
+              <h4 class="font-weight-bolder text-center">Nos Partenaires</h4>
+              <div>
+                  <ul class="text-center">
+                      <li>STARS</li>
+                      <li>Institut Française</li>
+                      <li>CEERE</li>
+                      <li>Orange</li>
+                      <li>ZAFY TODY</li>
+                      <li>CEENTRE</li>
+                  </ul>
+              </div>
+              
+          </div>
+          <div class="help col-md-4 text-center">
+              <h4 class="font-weight-bolder">Besoin d'aide ?</h4>
+              <ul style="margin-left: -50px;">
+                  <li>Conditions d'utilisation</li>
+                  <li>Mentions Légales</li>
+                  <li>F.A.Q.</li>
+              </ul>
+              <h4 class="font-weight-bolder">Credits</h4>
+              <ul style="margin-left: -50px;">
+                  <li>Photos : &copy <a href="https://web.facebook.com/antsamamilalaina.ratianarison" class="text-decoration-none text-secondary" >Antsa Mamilalaina Ratianarison</a> </li>
+                  <li>Logo : &copy <a href="https://web.facebook.com/lafatra.manovosoa" class="text-decoration-none text-secondary" >Ny Avo Lafatra Ramanandafy</a> </li>
+              </ul>
+          </div>
+          <div class="follow col-md-4 d-flex" style="flex-direction:column;align-items:flex-start">
+              <h4 class="font-weight-bolder text-center">SUIVEZ-NOUS</h4>
+              <div>
+                  <div style="margin-left:20%;">
+                      <img src="assets/img/wfacebook_48px.png" width="30" />
+                      <img src="assets/img/winstagram_100px.png" width="30" />
+                  </div>
+                  <h5  id="contact" class="font-weight-bolder pt-3" style="font-size: 15px;">CONTACT DIRECT?</h5>
+                  <ul style="margin-left: -70px;">
+                      <li class="text-center">+2610345978941</li>
+                      <li>harenamaitso@gmail.com</li>
+                  </ul>
+              </div>
+          </div>
+        </section>
+
+        <section class="footer-last-detail pt-3">
+          <div class="row">
+              <div class="col-md-6 d-flex justify-content-center">
+                  <p class="copyright"><span class="font-weight-bolder">HarenaMaitso - Hackaton</span> | 2021 Tout droits réservés &copy</p>                   
+              </div>
+              <div class="col-md-6 d-flex justify-content-center mr-0">
+                  <p>Designed by <span class="font-weight-bolder">ScorpionOne</span></p>
+              </div>
+          </div>
+        </section>
+    </footer>
+    
+    <script src="assets/js/js.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+  	<script src="assets/js/popper.min.js"></script>
+  	<script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
