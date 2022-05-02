@@ -5,6 +5,17 @@
 	--green-base-hover : #339933;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../../polices/Montserrat/Montserrat.eot');
+    src:url('../../../polices/Montserrat/Montserrat.woff2') format('woff2'),
+        url('../../../polices/Montserrat/Montserrat.woff') format('woff'),
+        url('../../../polices/Montserrat/Montserrat.ttf') format('truetype'),
+        url('../../../polices/Montserrat/Montserrat.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *
 {
 	font-family: 'Montserrat';
