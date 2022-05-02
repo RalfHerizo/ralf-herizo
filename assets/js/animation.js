@@ -29,12 +29,9 @@
 //     navbar_open_icon.style.display = "block";
 // });
 
+var x = document.getElementById("collapsibleNavbar");
 
 toggle = ()=>{
-    // document.getElementById('navbar-open-icon').style.display = "none";
-    // document.getElementById('navbar-close-icon').style.display = "block";
-
-    var x = document.getElementById("collapsibleNavbar");
 
     if (x.style.height === "230px") {
         x.style.height = "0px";
@@ -47,3 +44,12 @@ toggle = ()=>{
         x.style.height = "230px";
     }
 }
+
+var big_content = document.getElementById('big-content');
+
+big_content.addEventListener('click',()=>{
+    x.style.height = "0px";
+    x.style.overflow = "hidden";
+    document.getElementById('navbar-close-icon').style.display = "none";
+    document.getElementById('navbar-open-icon').style.display = "block";
+});
