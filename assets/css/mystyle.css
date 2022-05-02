@@ -685,7 +685,7 @@ footer:not(h3)
     #collapsibleNavbar
     {
         overflow: hidden;
-        height: 0;
+        height: 0px;
         width: 100%;
         transition: 0.5s;
     }
