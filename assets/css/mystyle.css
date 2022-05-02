@@ -681,4 +681,22 @@ footer:not(h3)
     {
         width: 100%!important;
     }
+
+    #collapsibleNavbar
+    {
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    #btndisplay:focus
+    {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.0)!important;
+    }
+
+    #navbar-close-icon
+    {
+        display: none;
+    }
 }
