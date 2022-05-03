@@ -25,4 +25,4 @@ big_content.addEventListener('click',()=>{
 const date = new Date();
 document.getElementById('currentDate').innerHTML = date.getFullYear();
 
-document.getElementById('myAge').innerHTML = date.getFullYear() - 2001 + " ans";
+document.getElementById('myAge').innerHTML = date.getFullYear() - 2001 ;
