@@ -414,7 +414,7 @@ footer:not(h3)
 
     .project-content
     {
-        margin: 0px 40px ;
+        margin: 6px 40px ;
     }
 
     .descri-container
@@ -477,7 +477,7 @@ footer:not(h3)
 
     .second-skills-container
     {
-        margin: 20px 0!important;
+        margin: 10px 0!important;
     }
 
     .framework-container
@@ -504,6 +504,11 @@ footer:not(h3)
     footer .btn-contact-me-first
     {
         font-size: 14px!important;
+    }
+
+    .section-second
+    {
+        padding-bottom: 2em;
     }
 }
 
@@ -613,8 +618,8 @@ footer:not(h3)
     .second-skills-container
     {
         margin: 0!important;
-        margin-bottom: 2em!important;
-        padding: 0 2em!important ;
+        margin-bottom: 1em!important;
+        padding: 0 1em!important ;
     }
 
     .second-skills-container:not(.second-skills-container:last-child) div:first-child
@@ -698,5 +703,15 @@ footer:not(h3)
     #navbar-close-icon
     {
         display: none;
+    }
+
+    .design-graph_container
+    {
+        margin-top: 0em!important;
+    }
+
+    .section-second
+    {
+        padding-bottom: 2em;
     }
 }
