@@ -20,4 +20,9 @@ big_content.addEventListener('click',()=>{
     x.style.overflow = "hidden";
     document.getElementById('navbar-close-icon').style.display = "none";
     document.getElementById('navbar-open-icon').style.display = "block";
-}); 
+});
+
+const date = new Date();
+document.getElementById('currentDate').innerHTML = date.getFullYear();
+
+document.getElementById('myAge').innerHTML = date.getFullYear() - 2001 + " ans";
